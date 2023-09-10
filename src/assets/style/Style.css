@@ -48,8 +48,7 @@ nav ul{
 nav ul li{
     display: inline;
     width: 85px;
-    text-align: center;
-
+    text-align: left;
 }
 
 nav ul li a{
@@ -639,3 +638,6 @@ label {
     font-weight: 400;
     cursor: pointer;
 }
+
+/* ____________________________________________ */
+/* __________________RESPENSIVE_________________ */

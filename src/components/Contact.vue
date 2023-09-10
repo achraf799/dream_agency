@@ -36,4 +36,6 @@
 export default {};
 </script>
 
-<style src="../assets/style/Style.css"></style>
+<style src="../assets/style/Style.css">
+/* _________________________- */
+</style>
