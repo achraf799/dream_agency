@@ -8,16 +8,14 @@
         <h3>
           <a>Get In Touch</a>
         </h3>
-        <div>
-          <label>Enter Your Email</label>
-          <div class="e-mail">
-            <input type="text" label="Enter Your Email" />
-            <button>
-              <span>Send</span>
-            </button>
-          </div>
+        <div class="e-mail">
+          <input type="text" placeholder="Enter Your Email" />
+          <button>
+            <span>Send</span>
+          </button>
         </div>
       </div>
+      <img class="map-res" src="../assets/images/map-res.png" />
       <div class="map">
         <img src="../assets/images/map.png" />
         <div class="card4">
@@ -37,5 +35,4 @@ export default {};
 </script>
 
 <style src="../assets/style/Style.css">
-/* _________________________- */
 </style>

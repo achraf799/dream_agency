@@ -81,6 +81,22 @@ nav ul li a:hover{
 font-weight: 600;
 }  
 
+.title-res{
+    display: none;
+}
+
+#menu-icon {
+    color:#FDC221;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+  }
+
+.navlist{
+    display: none;
+}
+
 nav h1{
     color: #331B3B;
     font-family: var(--font-family2);
@@ -110,7 +126,7 @@ nav h1{
     flex-direction: column;
     line-height: 99.8%;
     gap: 40px;
-    font-size: var(--font-size-title1);
+    font-size: var(--font-size-title-res1);
 }
 
 .title h1{
@@ -161,6 +177,7 @@ nav h1{
     font-weight: 700;
     line-height: 137.3%;
     letter-spacing: 0.34px;
+    margin: 20px 20px;
 }
 
 .home-img{
@@ -179,7 +196,6 @@ nav h1{
 /* _______________________________________________________________________-- */
 
 #Business{
-    /* height: 70vh; */
 }
 
 .back1{
@@ -213,7 +229,6 @@ nav h1{
 }
 
 .title-sp1{
-    /* width:346px; */
     font-weight: var(--font-weight-title1);
     line-height: 30px;
 }
@@ -427,6 +442,18 @@ gap: 50px;
 .container4{
 
 }
+.title4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+.title4 h1{
+    color: #331B3B;
+    font-family: var(--font-family1);
+    font-size: var(--font-size-title2);
+}
 
 .title-sp3{
     width:560px;
@@ -434,6 +461,11 @@ gap: 50px;
     display: block;
     font-weight: var(--font-weight-title2);
     position: relative;
+}
+
+.title-sp4{
+    font-weight: var(--font-weight-title1);
+    line-height: 30px;
 }
 
 .title-sp3 span{
@@ -499,12 +531,12 @@ gap: 50px;
 /* ____________________________________________________________________ */
 
 #Contact{
-    height: 50vh;
+    height: 40vh;
 }
 
 .back3{
     position: absolute;
-    height: 60.3vh;
+    height: 50.3vh;
     width: 100vw;
     right: 0;
     bottom: 0;
@@ -517,13 +549,13 @@ gap: 50px;
     height: 100%;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 250px;
 }
 
 .contact-text{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -543,6 +575,8 @@ gap: 50px;
     font-family: var(--font-family1);
     font-size: var(--font-size-p);
     font-weight: 400;
+    width: 439px;
+    height: 136px;
 }
 
 .contact-text h3{
@@ -560,32 +594,31 @@ gap: 50px;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.e-mail input{
+.e-mail input {
     width: 263px;
     height: 52px;
     border-color: #ffffff;
     background-color: #000;
     color: #FFF;
-    margin: 10px;
     font-family: var(--font-family1);
     font-size: var(--font-size-p);
     font-weight: 400;
 }
 
-label {
-    color: white;
-    font-weight: bold;
-    display: block; 
-    white-space: nowrap;
-    margin-left: 10px;
-  }
+.e-mail input::placeholder {
+    color: #FFF;
+    font-family: var(--font-family1);
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
 
 .e-mail button{
     width: 143px;
     height: 56px;
     border: 1px solid #FFF;
     background: #FFF;
-    margin: 10px;
     cursor: pointer;
 }
 
@@ -600,7 +633,7 @@ label {
 .map{
     width: 484px;
     height: 300px;
-    padding: 80px;
+    padding: 30px 150px 30px 50px;
 }
 
 .map img{
@@ -639,5 +672,670 @@ label {
     cursor: pointer;
 }
 
-/* ____________________________________________ */
-/* __________________RESPENSIVE_________________ */
+.map-res{
+    display: none;
+}
+
+/* ______________________________________________________________ */
+/* ____________________________________RESPENSIVE_________________ */
+/* ______________________________________________________________ */
+
+
+@media screen and (max-width: 500px) {
+
+
+    section{
+        padding: 20px;
+      }
+    
+      #Home{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
+      .nav1{
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+        padding: 20px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+      }
+    
+      .navlist {
+        position: absolute;
+        top: 1.5%;
+        right: -100%;
+        width: 180px;
+        height: 40vh;
+        display: flex;
+        background-image: url("../images/navback.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        z-index: 2;
+        text-align: center;
+      }
+    
+      .navlist a {
+        display: block;
+        margin: 3px 0;
+        padding: 0px 10px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #190b28;
+        transition: all 0.5s ease;
+      }
+    
+      .navlist ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      }
+    
+      .navlist ul li{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+      }
+    
+      .navlist.open {
+        right: 2%;
+      }
+    
+      #menu-icon.bx-x {
+        opacity: 70%;
+        transition: all 0.5s ease;
+      }
+      .home-texte{
+        width: 100%;
+        padding-top: 100px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .title-res{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+    }
+    
+    .title{
+        gap: 0;
+        font-size: var(--font-size-title-res1);
+        justify-content: center;
+    }
+    
+  
+    
+    .span0{
+        line-height: 50px;
+    }
+    
+    .span1{
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .span2{
+        border-bottom: 10px solid #FDC221;
+        line-height: 30px;
+    }
+    
+    .home-img{
+        display: flex;
+        width: 20%;
+        height: 40%;
+        position: initial;
+
+    }
+
+/* __________________________________________________________________ */
+
+#Business{
+    background-color: #ECF7FF;
+    width: 100%;
+}
+
+.back1{
+    display: none;
+}
+
+.swiper1{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* _____________________________________________ */
+    
+#AboutUs{
+    width: 100%;
+
+}
+.container2{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.container2 img{
+    display: none;
+}
+
+/* ___________________________________________ */
+
+    #Work{
+    height: auto;
+    background-color: rgba(255, 205, 189, 0.30);
+    width: 100%;
+
+    }
+    
+    .back2{
+        display: none;
+    }
+    
+    .container3{
+        /* ? */
+        height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    }
+    
+    .work-text{
+        flex-direction: column;
+    }
+    
+    .work-text p{
+        width: auto;
+        height: auto;
+    }
+    
+    .card2{
+        padding: 10px;
+        width: 350px;
+        height: 365px;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .card2-text h3{
+        font-size: 18px;
+    }
+    
+    .btn1{
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    
+/* ___________________________________________________________ */
+
+#Testimonials{
+    width: 100%;
+
+}
+
+.container4{
+
+}
+
+.title4{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0;
+    text-align: flex-start;
+}
+
+.title1 h1{
+    color: #331B3B;
+    font-family: var(--font-family1);
+    font-size: var(--font-size-title2);
+}
+
+.title-sp3{
+    width:100%;
+    height: 107px;
+    text-align: left;
+    position: relative;
+    align-items:flex-start;
+    justify-content: flex-start;
+    line-height: 50px;
+
+}
+
+.title-sp4{
+    line-height: 50px;
+    text-align: center;
+    align-items:center;
+
+}
+
+.testimonials-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 50px 0;
+
+}
+.card3{
+    width: 320px;
+    height: 300px;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    gap: 50px;
+}
+
+.card3 img{
+  
+}
+.card3 p{
+    width: 320px;
+    height: 160px;
+}
+
+/* ___________________________________ */
+
+#Contact{
+    height: auto;
+    background-color: #000;
+    width: 100%;
+}
+
+.back3{
+    display: none;
+}
+
+
+.container5{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-text{
+    width: 100%;
+    gap: 20px;
+}
+
+.contact-text p {
+    width: 100%;
+    height: 136px;
+}
+
+.e-mail{
+    width: 100%;
+}
+
+.map{
+    display: none;
+}
+
+.card4{
+    display: none;
+}
+
+.map-res{
+    display: flex;
+}
+
+}
+
+/* ______________________________________________________________ */
+/* ____________________________________RESPENSIVE_________________ */
+/* ______________________________________________________________ */
+
+
+@media screen and (max-width: 1200px ) and (min-width: 500px) {
+
+
+    section{
+        padding: 20px;
+      }
+    
+      #Home{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
+      .nav1{
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+        padding: 20px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+      }
+    
+      .navlist {
+        position: absolute;
+        top: 1.5%;
+        right: -100%;
+        width: 180px;
+        height: 40vh;
+        display: flex;
+        background-image: url("../images/navback.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        z-index: 2;
+        text-align: center;
+      }
+    
+      .navlist a {
+        display: block;
+        margin: 3px 0;
+        padding: 0px 10px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #190b28;
+        transition: all 0.5s ease;
+      }
+    
+      .navlist ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      }
+    
+      .navlist ul li{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+      }
+    
+      .navlist.open {
+        right: 2%;
+      }
+    
+      #menu-icon.bx-x {
+        opacity: 70%;
+        transition: all 0.5s ease;
+      }
+      .home-texte{
+        width: 100%;
+        padding-top: 100px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .title-res{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+    }
+    
+    .title{
+        gap: 0;
+        font-size: var(--font-size-title-res1);
+        justify-content: center;
+    }
+    
+  
+    
+    .span0{
+        line-height: 50px;
+    }
+    
+    .span1{
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .span2{
+        border-bottom: 10px solid #FDC221;
+        line-height: 30px;
+    }
+    
+    .home-img{
+        display: flex;
+        width: 20%;
+        height: 40%;
+        position: initial;
+
+    }
+
+/* __________________________________________________________________ */
+
+#Business{
+    background-color: #ECF7FF;
+    width: 100%;
+}
+
+.back1{
+    display: none;
+}
+
+.swiper1{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* _____________________________________________ */
+    
+#AboutUs{
+    width: 100%;
+
+}
+.container2{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.container2 img{
+    display: none;
+}
+
+/* ___________________________________________ */
+
+    #Work{
+    height: auto;
+    background-color: rgba(255, 205, 189, 0.30);
+    width: 100%;
+
+    }
+    
+    .back2{
+        display: none;
+    }
+    
+    .container3{
+        /* ? */
+        height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    }
+    
+    .work-text{
+        flex-direction: column;
+    }
+    
+    .work-text p{
+        width: auto;
+        height: auto;
+    }
+    
+    .card2{
+        padding: 10px;
+        width: 350px;
+        height: 365px;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .card2-text h3{
+        font-size: 18px;
+    }
+    
+    .btn1{
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    
+/* ___________________________________________________________ */
+
+#Testimonials{
+    width: 100%;
+
+}
+
+.container4{
+
+}
+
+.title4{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0;
+    text-align: flex-start;
+}
+
+.title1 h1{
+    color: #331B3B;
+    font-family: var(--font-family1);
+    font-size: var(--font-size-title2);
+}
+
+.title-sp3{
+    width:100%;
+    height: 107px;
+    text-align: left;
+    position: relative;
+    align-items:flex-start;
+    justify-content: flex-start;
+    line-height: 50px;
+
+}
+
+.title-sp4{
+    line-height: 50px;
+    text-align: center;
+    align-items:center;
+
+}
+
+.testimonials-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 50px 0;
+
+}
+.card3{
+    width: 320px;
+    height: 300px;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    gap: 50px;
+}
+
+.card3 img{
+  
+}
+.card3 p{
+    width: 320px;
+    height: 160px;
+}
+
+/* ___________________________________ */
+
+#Contact{
+    height: auto;
+    background-color: #000;
+    width: 100%;
+}
+
+.back3{
+    display: none;
+}
+
+
+.container5{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-text{
+    width: 100%;
+    gap: 20px;
+}
+
+.contact-text p {
+    width: 100%;
+    height: 136px;
+}
+
+.e-mail{
+    width: 100%;
+}
+
+.map{
+    display: none;
+}
+
+.card4{
+    display: none;
+}
+
+.map-res{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+}

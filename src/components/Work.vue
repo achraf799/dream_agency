@@ -16,7 +16,7 @@
         <div class="card2">
           <div class="card2-imgs">
             <img src="../assets/images/imgscrol1.png" />
-            <img src="../assets/images/imgscrol2.png" />
+            <img class="phone-ui" src="../assets/images/imgscrol2.png" />
           </div>
           <div class="card2-text">
             <h3>UI Soup</h3>
@@ -28,7 +28,7 @@
         <div class="card2">
           <div class="card2-imgs">
             <img src="../assets/images/imgscrol3.png" />
-            <img src="../assets/images/imgscrol4.png" />
+            <img class="phone-ui" src="../assets/images/imgscrol4.png" />
           </div>
           <div class="card2-text">
             <h3>Goldcrown Labs</h3>
@@ -40,7 +40,7 @@
         <div class="card2">
           <div class="card2-imgs">
             <img src="../assets/images/imgscrol1.png" />
-            <img src="../assets/images/imgscrol2.png" />
+            <img class="phone-ui" src="../assets/images/imgscrol2.png" />
           </div>
           <div class="card2-text">
             <h3>Close Concierge</h3>
@@ -52,7 +52,7 @@
         <div class="card2">
           <div class="card2-imgs">
             <img src="../assets/images/imgscrol3.png" />
-            <img src="../assets/images/imgscrol4.png" />
+            <img class="phone-ui" src="../assets/images/imgscrol4.png" />
           </div>
           <div class="card2-text">
             <h3>UI Soup</h3>

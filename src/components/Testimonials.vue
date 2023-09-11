@@ -1,8 +1,8 @@
 <template>
   <section id="Testimonials">
     <div class="container4">
-      <div class="title1" data-aos="fade-down">
-        <h1 class="title-sp1">Our Testimonials</h1>
+      <div class="title4" data-aos="fade-down">
+        <h1 class="title-sp4">Our Testimonials</h1>
         <h1 class="title-sp3">
           What Our Clients Are
           <span>Saying</span>
